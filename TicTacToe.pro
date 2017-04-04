@@ -24,8 +24,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    Board/TicTacToeBoard.cpp \
+    Manager/TicTacToeGameManager.cpp \
+    GameWindow.cpp \
+    Widget/customgamewidget.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    Board/IBoard.h \
+    Board/TicTacToeBoard.h \
+    Manager/IGameManager.h \
+    Manager/IManager.h \
+    Manager/TicTacToeGameManager.h \
+    Misc/Singleton.h \
+    Player/IPlayer.h \
+    Player/TicTacToePlayer.h \
+    Score/IScore.h \
+    Score/TicTacToeScore.h \
+    GameWindow.h \
+    Widget/customgamewidget.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    GameWindow.ui \
+    Widget/customgamewidget.ui
