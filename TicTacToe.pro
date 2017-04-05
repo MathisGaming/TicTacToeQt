@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui multimedia multimediawidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -28,7 +28,8 @@ SOURCES += main.cpp\
     Board/TicTacToeBoard.cpp \
     Manager/TicTacToeGameManager.cpp \
     GameWindow.cpp \
-    Widget/customgamewidget.cpp
+    Widget/customgamewidget.cpp \
+    Widget/camerawidget.cpp
 
 HEADERS  += mainwindow.h \
     Board/IBoard.h \
@@ -42,8 +43,13 @@ HEADERS  += mainwindow.h \
     Score/IScore.h \
     Score/TicTacToeScore.h \
     GameWindow.h \
-    Widget/customgamewidget.h
+    Widget/customgamewidget.h \
+    Widget/camerawidget.h
 
 FORMS    += mainwindow.ui \
     GameWindow.ui \
-    Widget/customgamewidget.ui
+    Widget/customgamewidget.ui \
+    Widget/camerawidget.ui
+
+RESOURCES += \
+    images.qrc

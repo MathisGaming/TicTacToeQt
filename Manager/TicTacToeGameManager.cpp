@@ -42,7 +42,7 @@ void TicTacToeGameManager::init()
     //init the ui
     if(m_gameWindow!=nullptr)
     {
-        m_gameWindow->init_ui(QString::fromStdString(m_players[0]->get_name()),QString::fromStdString(m_players[1]->get_name()));
+        m_gameWindow->init_ui(QString::fromStdString(m_players[0]->get_name()),QString::fromStdString(m_players[1]->get_name()),QString::fromStdString(m_current_player->get_name()));
         m_gameWindow->update_scores_ui(QString::number(m_players[0]->get_score()),QString::number(m_players[1]->get_score()));
     }
 }

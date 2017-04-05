@@ -14,7 +14,7 @@ class GameWindow : public QDialog
 public:
     explicit GameWindow(QWidget *parent = 0);
     ~GameWindow();
-    void init_ui(QString fpname, QString spname);
+    void init_ui(QString fpname, QString spname, QString currentPlayerName);
 
     void update_scores_ui(QString fpscore, QString spscore);
 

@@ -9,18 +9,12 @@ GameWindow::GameWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    //setup the background
-    // Warning : path has to be with executable.
-    QString path = QDir::currentPath();
-    QPixmap bkgnd(path+"/Img/tttbackground.jpg");
+    QPixmap bkgnd(":/tttbackground.jpg");
     bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
     this->setPalette(palette);
-    ui->WinnerLabel->setVisible(false);
-    ui->WinnerNameLabel->setVisible(false);
-    ui->ReplayButton->setEnabled(false);
-    ui->ReplayButton->setVisible(false);
+    show_winner(false);
 }
 
 GameWindow::~GameWindow()
@@ -28,10 +22,11 @@ GameWindow::~GameWindow()
     delete ui;
 }
 
-void GameWindow::init_ui(QString fpname, QString spname)
+void GameWindow::init_ui(QString fpname, QString spname, QString currentPlayerName)
 {
     ui->FPlayerNameLabel->setText(fpname);
     ui->SPlayerNameLabel->setText(spname);
+    update_current_player_name_ui(currentPlayerName);
     enable_game_buttons(true);
     reset_game_buttons();
     show_winner(false);

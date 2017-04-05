@@ -7,6 +7,14 @@ CustomGameWidget::CustomGameWidget(QWidget *parent) :
     ui(new Ui::CustomGameWidget)
 {
     ui->setupUi(this);
+    /*QPixmap bkgnd(":/board.png");
+    bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
+    QPalette palette;
+    palette.setBrush(QPalette::Background, bkgnd);
+    this->setPalette(palette);*/
+    //this->setStyleSheet("QWidget {background-image:url(:/board.png) }");
+    this->setStyleSheet("background-image: url(:/board.png);");
+
 }
 
 CustomGameWidget::~CustomGameWidget()
@@ -75,26 +83,23 @@ void CustomGameWidget::button_clicked(int x, int y)
 
 void CustomGameWidget::reset_buttons()
 {
-    ui->GameButton_0_0->setText("");
-    ui->GameButton_0_0->setEnabled(true);
-    ui->GameButton_0_1->setText("");
-    ui->GameButton_0_1->setEnabled(true);
-    ui->GameButton_0_2->setText("");
-    ui->GameButton_0_2->setEnabled(true);
+    reset_button(ui->GameButton_0_0);
+    reset_button(ui->GameButton_0_1);
+    reset_button(ui->GameButton_0_2);
+    reset_button(ui->GameButton_1_0);
+    reset_button(ui->GameButton_1_1);
+    reset_button(ui->GameButton_1_2);
+    reset_button(ui->GameButton_2_0);
+    reset_button(ui->GameButton_2_1);
+    reset_button(ui->GameButton_2_2);
+}
 
-    ui->GameButton_1_0->setText("");
-    ui->GameButton_1_0->setEnabled(true);
-    ui->GameButton_1_1->setText("");
-    ui->GameButton_1_1->setEnabled(true);
-    ui->GameButton_1_2->setText("");
-    ui->GameButton_1_2->setEnabled(true);
-
-    ui->GameButton_2_0->setText("");
-    ui->GameButton_2_0->setEnabled(true);
-    ui->GameButton_2_1->setText("");
-    ui->GameButton_2_1->setEnabled(true);
-    ui->GameButton_2_2->setText("");
-    ui->GameButton_2_2->setEnabled(true);
+void CustomGameWidget::reset_button(QPushButton* button)
+{
+    button->setText("");
+    button->setFlat(true);
+    button->setEnabled(true);
+    button->setStyleSheet("QPushButton{background: transparent;}");
 }
 
 void CustomGameWidget::enable_buttons(bool enable){
@@ -112,13 +117,11 @@ void CustomGameWidget::enable_buttons(bool enable){
 void CustomGameWidget::set_button_value(QPushButton* button, int value)
 {
     if(button!=nullptr){
-        if(value == 1){
-           button->setText("O");
+        if(value == 1 || value == 2){
            button->setEnabled(false);
-        }
-        else if (value == 2){
-           button->setText("X");
-           button->setEnabled(false);
+           button->setVisible(true);
+           QString styleSheet = (value == 1) ? "border-image:url(:/black_Circle.png);" : "border-image:url(:/red_cross.png);";
+           button->setStyleSheet(styleSheet);
         }
     }
 }

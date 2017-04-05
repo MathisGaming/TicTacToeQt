@@ -38,6 +38,7 @@ private slots:
 
 private:
     void button_clicked(int x, int y);
+    void reset_button(QPushButton* button);
     Ui::CustomGameWidget *ui;
 };
 

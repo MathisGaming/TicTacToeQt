@@ -16,7 +16,7 @@
   <widget class="QPushButton" name="GameButton_0_0">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>0</x>
      <y>10</y>
      <width>75</width>
      <height>50</height>
@@ -29,7 +29,10 @@
     </size>
    </property>
    <property name="focusPolicy">
-    <enum>Qt::ClickFocus</enum>
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
    </property>
    <property name="text">
     <string/>
@@ -38,7 +41,7 @@
   <widget class="QPushButton" name="GameButton_0_1">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>85</x>
      <y>10</y>
      <width>75</width>
      <height>50</height>
@@ -51,7 +54,7 @@
     </size>
    </property>
    <property name="focusPolicy">
-    <enum>Qt::ClickFocus</enum>
+    <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
     <string/>
@@ -73,7 +76,7 @@
     </size>
    </property>
    <property name="focusPolicy">
-    <enum>Qt::ClickFocus</enum>
+    <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
     <string/>
@@ -82,7 +85,7 @@
   <widget class="QPushButton" name="GameButton_1_0">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>0</x>
      <y>70</y>
      <width>75</width>
      <height>50</height>
@@ -95,7 +98,7 @@
     </size>
    </property>
    <property name="focusPolicy">
-    <enum>Qt::ClickFocus</enum>
+    <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
     <string/>
@@ -104,7 +107,7 @@
   <widget class="QPushButton" name="GameButton_1_1">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>85</x>
      <y>70</y>
      <width>75</width>
      <height>50</height>
@@ -117,7 +120,7 @@
     </size>
    </property>
    <property name="focusPolicy">
-    <enum>Qt::ClickFocus</enum>
+    <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
     <string/>
@@ -139,7 +142,7 @@
     </size>
    </property>
    <property name="focusPolicy">
-    <enum>Qt::ClickFocus</enum>
+    <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
     <string/>
@@ -148,8 +151,8 @@
   <widget class="QPushButton" name="GameButton_2_0">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>130</y>
+     <x>0</x>
+     <y>135</y>
      <width>75</width>
      <height>50</height>
     </rect>
@@ -161,7 +164,7 @@
     </size>
    </property>
    <property name="focusPolicy">
-    <enum>Qt::ClickFocus</enum>
+    <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
     <string/>
@@ -170,8 +173,8 @@
   <widget class="QPushButton" name="GameButton_2_1">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>130</y>
+     <x>85</x>
+     <y>135</y>
      <width>75</width>
      <height>50</height>
     </rect>
@@ -183,7 +186,7 @@
     </size>
    </property>
    <property name="focusPolicy">
-    <enum>Qt::ClickFocus</enum>
+    <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
     <string/>
@@ -193,7 +196,7 @@
    <property name="geometry">
     <rect>
      <x>170</x>
-     <y>130</y>
+     <y>135</y>
      <width>75</width>
      <height>50</height>
     </rect>
@@ -205,7 +208,7 @@
     </size>
    </property>
    <property name="focusPolicy">
-    <enum>Qt::ClickFocus</enum>
+    <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
     <string/>

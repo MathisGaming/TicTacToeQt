@@ -33,6 +33,10 @@ void MainWindow::create_game_window()
 
     int maxScore = ui->ScoreLineEdit->text().toInt();
 
+    // now we create the game window
+    GameWindow* gameWindow = new GameWindow();
+    TicTacToeGameManager::instance()->set_game_window(gameWindow);
+
     // Create the Players
     TicTacToeGameManager::instance()->create_player(FPlayerNameStr,1);
     TicTacToeGameManager::instance()->create_player(SPlayerNameStr,2);
@@ -40,11 +44,8 @@ void MainWindow::create_game_window()
     TicTacToeGameManager::instance()->set_max_score(maxScore);
     TicTacToeGameManager::instance()->init();
 
-    // now we create the game window
-    GameWindow* gameWindow = new GameWindow();
-
     gameWindow->show();
-    TicTacToeGameManager::instance()->set_game_window(gameWindow);
+
     hide();
 }
 
