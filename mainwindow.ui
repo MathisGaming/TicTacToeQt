@@ -52,7 +52,7 @@
        <item>
         <widget class="QLabel" name="FPlayerNameLabel">
          <property name="text">
-          <string>First Player Name</string>
+          <string>First Player Namen (Circle)</string>
          </property>
         </widget>
        </item>
@@ -62,7 +62,7 @@
        <item>
         <widget class="QLabel" name="SPlayerNameLabel">
          <property name="text">
-          <string>Second Player Name</string>
+          <string>Second Player Name (Cross)</string>
          </property>
         </widget>
        </item>

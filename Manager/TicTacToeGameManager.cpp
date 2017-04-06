@@ -4,10 +4,6 @@
 #include "Widget/customgamewidget.h"
 #include "GameWindow.h"
 
-const int emptyCase = 0;
-const int whitePawn = 1;
-const int blackPawn = 2;
-
 TicTacToeGameManager::TicTacToeGameManager() :
 m_current_player(nullptr),
 m_maxScore(1),
@@ -75,7 +71,7 @@ int TicTacToeGameManager::play_once(int x, int y,QPushButton* button)
         return -1;
     }
 
-    if (current_player_Symbol != whitePawn || current_player_Symbol != blackPawn) {
+    if (current_player_Symbol != s_circlePawn || current_player_Symbol != s_crossPawn) {
         // throw error - invalid player value. Something went wrong.
     }
 
@@ -151,21 +147,21 @@ int TicTacToeGameManager::check_vertical(){
     auto cases = m_board->get_cases();
     if (cases[0][0]->value == cases[1][0]->value &&
         cases[1][0]->value == cases[2][0]->value) {
-        if (cases[0][0]->value != emptyCase) {
+        if (cases[0][0]->value != s_emptyPawn) {
             return cases[0][0]->value;
         }
     }
     if (cases[0][1]->value == cases[1][1]->value &&
         cases[1][1]->value == cases[2][1]->value)
     {
-        if (cases[0][1]->value != emptyCase) {
+        if (cases[0][1]->value != s_emptyPawn) {
             return cases[0][1]->value;
         }
     }
     if (cases[0][2]->value == cases[1][2]->value &&
         cases[1][2]->value == cases[2][2]->value)
     {
-        if (cases[0][2]->value != emptyCase) {
+        if (cases[0][2]->value != s_emptyPawn) {
             return cases[0][2]->value;
         }
     }
@@ -180,21 +176,21 @@ int TicTacToeGameManager::check_horizontal()
     auto cases = m_board->get_cases();
     if (cases[0][0]->value == cases[0][1]->value &&
         cases[0][1]->value == cases[0][2]->value) {
-        if (cases[0][0]->value != emptyCase) {
+        if (cases[0][0]->value != s_emptyPawn) {
             return cases[0][0]->value;
         }
     }
     if (cases[1][0]->value == cases[1][1]->value &&
         cases[1][1]->value == cases[1][2]->value)
     {
-        if (cases[1][0]->value != emptyCase) {
+        if (cases[1][0]->value != s_emptyPawn) {
             return cases[1][0]->value;
         }
     }
     if (cases[2][0]->value == cases[2][1]->value &&
         cases[2][1]->value == cases[2][2]->value)
     {
-        if (cases[2][0]->value != emptyCase) {
+        if (cases[2][0]->value != s_emptyPawn) {
             return cases[2][1]->value;
         }
     }
@@ -207,12 +203,12 @@ int TicTacToeGameManager::check_diagonal(){
     // if for some reason someone is accessing here and deleting we could have issues.
     auto cases = m_board->get_cases();
     if (cases[0][0]->value == cases[1][1]->value && cases[1][1]->value == cases[2][2]->value) {
-        if (cases[0][0]->value != emptyCase) {
+        if (cases[0][0]->value != s_emptyPawn) {
             return cases[0][0]->value;
         }
     }
     if (cases[0][2]->value == cases[1][1]->value && cases[1][1]->value == cases[2][0]->value) {
-        if (cases[0][2]->value != emptyCase) {
+        if (cases[0][2]->value != s_emptyPawn) {
             return cases[0][2]->value;
         }
     }

@@ -6,8 +6,11 @@
 class TicTacToeGameManager : public IGameManager , public Singleton<TicTacToeGameManager>
 {
     friend class Singleton<TicTacToeGameManager>;
-
+    static const int s_emptyPawn = 0;
 public:
+    static const int s_circlePawn = 1;
+    static const int s_crossPawn = 2;
+
     int play_once(int x, int y,class QPushButton *button);
     bool update_score(int winnerSymbol);
     void init();
@@ -26,7 +29,6 @@ public:
     std::vector<class IPlayer*> get_players() const{ return m_players; }
 
     void set_game_window(class GameWindow* gamewindow){ m_gameWindow = gamewindow; }
-
 
 protected:
     int check_vertical();

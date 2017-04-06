@@ -28,8 +28,7 @@ SOURCES += main.cpp\
     Board/TicTacToeBoard.cpp \
     Manager/TicTacToeGameManager.cpp \
     GameWindow.cpp \
-    Widget/customgamewidget.cpp \
-    Widget/camerawidget.cpp
+    Widget/customgamewidget.cpp
 
 HEADERS  += mainwindow.h \
     Board/IBoard.h \
@@ -43,13 +42,11 @@ HEADERS  += mainwindow.h \
     Score/IScore.h \
     Score/TicTacToeScore.h \
     GameWindow.h \
-    Widget/customgamewidget.h \
-    Widget/camerawidget.h
+    Widget/customgamewidget.h
 
 FORMS    += mainwindow.ui \
     GameWindow.ui \
-    Widget/customgamewidget.ui \
-    Widget/camerawidget.ui
+    Widget/customgamewidget.ui
 
 RESOURCES += \
     images.qrc

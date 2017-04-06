@@ -37,9 +37,9 @@ void MainWindow::create_game_window()
     GameWindow* gameWindow = new GameWindow();
     TicTacToeGameManager::instance()->set_game_window(gameWindow);
 
-    // Create the Players
-    TicTacToeGameManager::instance()->create_player(FPlayerNameStr,1);
-    TicTacToeGameManager::instance()->create_player(SPlayerNameStr,2);
+    // Create the Players, GameManager should probably handle selection of symbol internally.
+    TicTacToeGameManager::instance()->create_player(FPlayerNameStr,TicTacToeGameManager::s_circlePawn);
+    TicTacToeGameManager::instance()->create_player(SPlayerNameStr,TicTacToeGameManager::s_crossPawn);
     // Initialize max score.
     TicTacToeGameManager::instance()->set_max_score(maxScore);
     TicTacToeGameManager::instance()->init();
