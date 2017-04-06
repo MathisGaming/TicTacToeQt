@@ -11,6 +11,12 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->ScoreLineEdit->setValidator( new QIntValidator(1, 10, this) );
+
+    QPixmap bkgnd(":/tttbackground _plain.jpg");
+    bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
+    QPalette palette;
+    palette.setBrush(QPalette::Background, bkgnd);
+    this->setPalette(palette);
 }
 
 MainWindow::~MainWindow()

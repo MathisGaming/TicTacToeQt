@@ -3,6 +3,8 @@
     <file alias="black_Circle.png">Images/black_Circle.png</file>
     <file alias="red_cross.png">Images/red_cross.png</file>
     <file alias="tttbackground.jpg">Images/tttbackground.jpg</file>
+    <file alias="tttbackground _plain.jpg">Images/tttbackground _plain.jpg</file>
     <file alias="board.png">Images/board.png</file>
+
 </qresource>
 </RCC>
