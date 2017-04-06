@@ -162,7 +162,7 @@ int TicTacToeGameManager::check_vertical(){
 
 int TicTacToeGameManager::check_horizontal()
 {
-    // TODO: Warning : This is not thread safe
+    // This is not thread safe
     // Best way to do that is to make a copy at this point and go through it.
     // if for some reason someone is accessing here and deleting we could have issues.
     auto cases = m_board->get_cases();
@@ -190,7 +190,7 @@ int TicTacToeGameManager::check_horizontal()
 }
 
 int TicTacToeGameManager::check_diagonal(){
-    // TODO: Warning : This is not thread safe
+    // This is not thread safe
     // Best way to do that is to make a copy at this point and go through it.
     // if for some reason someone is accessing here and deleting we could have issues.
     auto cases = m_board->get_cases();
