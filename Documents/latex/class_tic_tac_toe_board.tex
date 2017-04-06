@@ -1,0 +1,83 @@
+\hypertarget{class_tic_tac_toe_board}{}\section{Tic\+Tac\+Toe\+Board Class Reference}
+\label{class_tic_tac_toe_board}\index{Tic\+Tac\+Toe\+Board@{Tic\+Tac\+Toe\+Board}}
+
+
+\hyperlink{class_tic_tac_toe_board}{Tic\+Tac\+Toe\+Board} class will be holding the values for each each case of the board on a 3x3 for tictactoe.  
+
+
+
+
+{\ttfamily \#include $<$Tic\+Tac\+Toe\+Board.\+h$>$}
+
+Inheritance diagram for Tic\+Tac\+Toe\+Board\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tic_tac_toe_board}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tic_tac_toe_board_adff1ee9118b05338cba02ba1f0352236}\label{class_tic_tac_toe_board_adff1ee9118b05338cba02ba1f0352236}} 
+\hyperlink{class_tic_tac_toe_board_adff1ee9118b05338cba02ba1f0352236}{Tic\+Tac\+Toe\+Board} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tic_tac_toe_board_a6d5ab5e2d86f603927c3fa34d2fc03fc}\label{class_tic_tac_toe_board_a6d5ab5e2d86f603927c3fa34d2fc03fc}} 
+\hyperlink{class_tic_tac_toe_board_a6d5ab5e2d86f603927c3fa34d2fc03fc}{$\sim$\+Tic\+Tac\+Toe\+Board} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tic_tac_toe_board_a1800dd3903d95e8cd0eba839fbb06319}\label{class_tic_tac_toe_board_a1800dd3903d95e8cd0eba839fbb06319}} 
+void \hyperlink{class_tic_tac_toe_board_a1800dd3903d95e8cd0eba839fbb06319}{init} ()
+\begin{DoxyCompactList}\small\item\em init Initialize the board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tic_tac_toe_board_ab4e17ab271aaf248e569297979b56f7a}\label{class_tic_tac_toe_board_ab4e17ab271aaf248e569297979b56f7a}} 
+void \hyperlink{class_tic_tac_toe_board_ab4e17ab271aaf248e569297979b56f7a}{reset} ()
+\begin{DoxyCompactList}\small\item\em reset Reset the board \end{DoxyCompactList}\item 
+void \hyperlink{class_tic_tac_toe_board_a59fbbb4e8c7fa5ba6e1cdc8c33c50fb5}{play\+\_\+once} (int x, int y, int value)
+\begin{DoxyCompactList}\small\item\em play\+\_\+once Select the given case and give the value to set it played by a player. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tic_tac_toe_board_aecc770d5451f2e3233da05859f6f37d4}\label{class_tic_tac_toe_board_aecc770d5451f2e3233da05859f6f37d4}} 
+auto \hyperlink{class_tic_tac_toe_board_aecc770d5451f2e3233da05859f6f37d4}{get\+\_\+cases} () const
+\begin{DoxyCompactList}\small\item\em get\+\_\+cases return access to the cases of the board. The Game\+Manager will need it to check winning conditions. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tic_tac_toe_board_a4d5be55d8439e66d32039ba98551fda7}{is\+\_\+full} () const
+\begin{DoxyCompactList}\small\item\em is\+\_\+full Check if the board has used all its cases. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_tic_tac_toe_board}{Tic\+Tac\+Toe\+Board} class will be holding the values for each each case of the board on a 3x3 for tictactoe. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tic_tac_toe_board_a4d5be55d8439e66d32039ba98551fda7}\label{class_tic_tac_toe_board_a4d5be55d8439e66d32039ba98551fda7}} 
+\index{Tic\+Tac\+Toe\+Board@{Tic\+Tac\+Toe\+Board}!is\+\_\+full@{is\+\_\+full}}
+\index{is\+\_\+full@{is\+\_\+full}!Tic\+Tac\+Toe\+Board@{Tic\+Tac\+Toe\+Board}}
+\subsubsection{\texorpdfstring{is\+\_\+full()}{is\_full()}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Board\+::is\+\_\+full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+is\+\_\+full Check if the board has used all its cases. 
+
+\begin{DoxyReturn}{Returns}
+Return true if the board is fully used 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_board_a59fbbb4e8c7fa5ba6e1cdc8c33c50fb5}\label{class_tic_tac_toe_board_a59fbbb4e8c7fa5ba6e1cdc8c33c50fb5}} 
+\index{Tic\+Tac\+Toe\+Board@{Tic\+Tac\+Toe\+Board}!play\+\_\+once@{play\+\_\+once}}
+\index{play\+\_\+once@{play\+\_\+once}!Tic\+Tac\+Toe\+Board@{Tic\+Tac\+Toe\+Board}}
+\subsubsection{\texorpdfstring{play\+\_\+once()}{play\_once()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Board\+::play\+\_\+once (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+play\+\_\+once Select the given case and give the value to set it played by a player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X Coordinate to be played \\
+\hline
+{\em y} & Y Coordinate to be played \\
+\hline
+{\em value} & Value of the player (also called symbol). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Board/Tic\+Tac\+Toe\+Board.\+h\item 
+Board/Tic\+Tac\+Toe\+Board.\+cpp\end{DoxyCompactItemize}

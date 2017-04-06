@@ -1,5 +1,8 @@
 #include <string>
 
+/**
+ * @brief The IPlayer interface used as a template to implement players.
+ */
 class IPlayer
 {
 public:

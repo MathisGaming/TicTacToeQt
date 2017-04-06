@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['set_5fbutton_5fvalue',['set_button_value',['../class_game_window.html#adb7764f6b74f57ba2197cb9f5a65c47b',1,'GameWindow::set_button_value()'],['../class_custom_game_widget.html#ae34e750a94a537ee435aa31311b5f495',1,'CustomGameWidget::set_button_value()']]],
+  ['set_5fcurrent_5fplayer_5ffrom_5findex',['set_current_player_from_index',['../class_tic_tac_toe_game_manager.html#af97e0687582ed937fd01c603e82c2b5e',1,'TicTacToeGameManager']]],
+  ['set_5fmax_5fscore',['set_max_score',['../class_tic_tac_toe_game_manager.html#a309645c05a8ae25efc3d99729af9910b',1,'TicTacToeGameManager']]],
+  ['set_5fname',['set_name',['../class_tic_tac_toe_player.html#a0f2c55f9e76fa53cf723735253dfc43e',1,'TicTacToePlayer']]],
+  ['show_5fwinner',['show_winner',['../class_game_window.html#adfdbef2f1c76091d1a14a07660baeb7f',1,'GameWindow']]],
+  ['singleton',['Singleton',['../class_singleton.html#a923b995920da9c06590adb170ab2f890',1,'Singleton']]]
+];

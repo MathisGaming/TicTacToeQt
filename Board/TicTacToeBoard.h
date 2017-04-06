@@ -53,12 +53,37 @@ public:
       */
     ~TicTacToeBoard();
 
+    /**
+     * @brief init Initialize the board.
+     */
     void init();
+
+    /**
+     * @brief reset Reset the board
+     */
     void reset();
+
+    /**
+     * @brief play_once Select the given case and give the value to set it played by a player.
+     * @param x X Coordinate to be played
+     * @param y Y Coordinate to be played
+     * @param value Value of the player (also called symbol).
+     */
     void play_once(int x, int y, int value);
+
+    /**
+     * @brief get_cases return access to the cases of the board. The GameManager will need it to check winning conditions.
+     */
     auto get_cases() const { return m_cases; }
+
+    /**
+     * @brief is_full Check if the board has used all its cases.
+     * @return Return true if the board is fully used
+     */
     bool is_full() const {return m_update_count == (HLENGTH*VLENGTH);}
 private:
+    /// All the cases for the board, here a 3x3 for tic tac toe.
     Case* m_cases[HLENGTH][VLENGTH];
+    /// Simple count updated everytime a player plays a case.
     int m_update_count;
 };

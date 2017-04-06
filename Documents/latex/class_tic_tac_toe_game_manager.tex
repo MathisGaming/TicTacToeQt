@@ -1,0 +1,306 @@
+\hypertarget{class_tic_tac_toe_game_manager}{}\section{Tic\+Tac\+Toe\+Game\+Manager Class Reference}
+\label{class_tic_tac_toe_game_manager}\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+
+
+The \hyperlink{class_tic_tac_toe_game_manager}{Tic\+Tac\+Toe\+Game\+Manager} class This is the core of the application. This class is responsible of handling data creating, modification, winning condition etc.. It is the brain / core of the gameplay. Everything should pass through this singleton object.  
+
+
+
+
+{\ttfamily \#include $<$Tic\+Tac\+Toe\+Game\+Manager.\+h$>$}
+
+Inheritance diagram for Tic\+Tac\+Toe\+Game\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_tic_tac_toe_game_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_tic_tac_toe_game_manager_af276b6b66af26c170801bdd7aa1fd2f6}{play\+\_\+once} (int x, int y, class Q\+Push\+Button $\ast$button)
+\begin{DoxyCompactList}\small\item\em play\+\_\+once Play once and check for different condition to make sure it is a possible move as well as checking if someone won the current round. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tic_tac_toe_game_manager_a4df4150f4292a51a8f711b3cf62e2608}{update\+\_\+score} (int winner\+Symbol)
+\begin{DoxyCompactList}\small\item\em update\+\_\+score Update the score on both data (player score) as well as the ui. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a3dcf19f39ad3e65853c884bc29430460}\label{class_tic_tac_toe_game_manager_a3dcf19f39ad3e65853c884bc29430460}} 
+void \hyperlink{class_tic_tac_toe_game_manager_a3dcf19f39ad3e65853c884bc29430460}{init} ()
+\begin{DoxyCompactList}\small\item\em init Initialized the whole game. From player, board, score, data as well as UI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a8d8d0b8f023beb5dab9357b263be44a9}\label{class_tic_tac_toe_game_manager_a8d8d0b8f023beb5dab9357b263be44a9}} 
+void \hyperlink{class_tic_tac_toe_game_manager_a8d8d0b8f023beb5dab9357b263be44a9}{reset\+\_\+game} ()
+\begin{DoxyCompactList}\small\item\em Reset the score and board to start a new round. \end{DoxyCompactList}\item 
+void \hyperlink{class_tic_tac_toe_game_manager_a2d2b1cf7c29f760811f3ecc983dd2c5f}{create\+\_\+player} (const std\+::string \&name, const int \&symbol)
+\begin{DoxyCompactList}\small\item\em create\+\_\+player Create a player based on its name and symbol. \end{DoxyCompactList}\item 
+class \hyperlink{class_i_player}{I\+Player} $\ast$ \hyperlink{class_tic_tac_toe_game_manager_aacdb43d784567d95b535e66e91aca832}{get\+\_\+current\+\_\+player} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+current\+\_\+player \end{DoxyCompactList}\item 
+void \hyperlink{class_tic_tac_toe_game_manager_a309645c05a8ae25efc3d99729af9910b}{set\+\_\+max\+\_\+score} (const int \&max\+\_\+score)
+\begin{DoxyCompactList}\small\item\em set\+\_\+max\+\_\+score Set the maximum score for th game. \end{DoxyCompactList}\item 
+int \hyperlink{class_tic_tac_toe_game_manager_a311fdd7f83b66a5cc7eeafe584455315}{get\+\_\+max\+\_\+score} () const
+\begin{DoxyCompactList}\small\item\em get\+\_\+max\+\_\+score \end{DoxyCompactList}\item 
+class \hyperlink{class_i_player}{I\+Player} $\ast$ \hyperlink{class_tic_tac_toe_game_manager_a791389179603563f9c90a25aa173ceb4}{find\+\_\+player\+\_\+from\+\_\+symbol} (int symbol, int \&index)
+\begin{DoxyCompactList}\small\item\em find\+\_\+player\+\_\+from\+\_\+symbol for the given symbol return the player and give its index as a reference parameter. \end{DoxyCompactList}\item 
+std\+::vector$<$ class \hyperlink{class_i_player}{I\+Player} $\ast$ $>$ \hyperlink{class_tic_tac_toe_game_manager_ac7a54acc425dd27e92f8ff3866a333a6}{get\+\_\+players} () const
+\begin{DoxyCompactList}\small\item\em get\+\_\+players \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a2f3da6778543e6cf7b152570b7e1350d}\label{class_tic_tac_toe_game_manager_a2f3da6778543e6cf7b152570b7e1350d}} 
+void {\bfseries set\+\_\+game\+\_\+window} (class \hyperlink{class_game_window}{Game\+Window} $\ast$gamewindow)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a23c11b057becb1c20a8e4f6c5389bf87}\label{class_tic_tac_toe_game_manager_a23c11b057becb1c20a8e4f6c5389bf87}} 
+static const int \hyperlink{class_tic_tac_toe_game_manager_a23c11b057becb1c20a8e4f6c5389bf87}{s\+\_\+circle\+Pawn} = 1
+\begin{DoxyCompactList}\small\item\em const variable used to define what is the circle value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a34b41476fbb13bc8eec7b7f638524971}\label{class_tic_tac_toe_game_manager_a34b41476fbb13bc8eec7b7f638524971}} 
+static const int \hyperlink{class_tic_tac_toe_game_manager_a34b41476fbb13bc8eec7b7f638524971}{s\+\_\+cross\+Pawn} = 2
+\begin{DoxyCompactList}\small\item\em const variable used to define what is a cross value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_tic_tac_toe_game_manager_a25e9e556bf6f7324f4e7ef813778ecd0}{check\+\_\+vertical} ()
+\begin{DoxyCompactList}\small\item\em check\+\_\+vertical \end{DoxyCompactList}\item 
+int \hyperlink{class_tic_tac_toe_game_manager_af5045a121fc7c8f66bf8977ca2efb7b7}{check\+\_\+horizontal} ()
+\begin{DoxyCompactList}\small\item\em check\+\_\+horizontal \end{DoxyCompactList}\item 
+int \hyperlink{class_tic_tac_toe_game_manager_a7baa9e6ba971b930f8ace61cc42f034f}{check\+\_\+diagonal} ()
+\begin{DoxyCompactList}\small\item\em check\+\_\+diagonal \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a98277cf9aec99da101d1e81aece4ae5b}\label{class_tic_tac_toe_game_manager_a98277cf9aec99da101d1e81aece4ae5b}} 
+void \hyperlink{class_tic_tac_toe_game_manager_a98277cf9aec99da101d1e81aece4ae5b}{get\+\_\+next\+\_\+player} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+next\+\_\+player update the current player to be the next player. \end{DoxyCompactList}\item 
+void \hyperlink{class_tic_tac_toe_game_manager_af97e0687582ed937fd01c603e82c2b5e}{set\+\_\+current\+\_\+player\+\_\+from\+\_\+index} (int index)
+\begin{DoxyCompactList}\small\item\em set\+\_\+current\+\_\+player\+\_\+from\+\_\+index Set the current player to be for the given index. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tic_tac_toe_game_manager_aeac0a0f9d52ecf828f0827a2069e36ca}{check\+\_\+player\+\_\+score\+\_\+limit} ()
+\begin{DoxyCompactList}\small\item\em check\+\_\+player\+\_\+score\+\_\+limit \end{DoxyCompactList}\item 
+int \hyperlink{class_tic_tac_toe_game_manager_a6e619b1a463a7165949d34ce5d4ce1a7}{check\+\_\+winner} ()
+\begin{DoxyCompactList}\small\item\em check\+\_\+winner \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_ad810229015d6649556c3e37f689094f0}\label{class_tic_tac_toe_game_manager_ad810229015d6649556c3e37f689094f0}} 
+class {\bfseries Singleton$<$ Tic\+Tac\+Toe\+Game\+Manager $>$}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_tic_tac_toe_game_manager}{Tic\+Tac\+Toe\+Game\+Manager} class This is the core of the application. This class is responsible of handling data creating, modification, winning condition etc.. It is the brain / core of the gameplay. Everything should pass through this singleton object. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a7baa9e6ba971b930f8ace61cc42f034f}\label{class_tic_tac_toe_game_manager_a7baa9e6ba971b930f8ace61cc42f034f}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!check\+\_\+diagonal@{check\+\_\+diagonal}}
+\index{check\+\_\+diagonal@{check\+\_\+diagonal}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{check\+\_\+diagonal()}{check\_diagonal()}}
+{\footnotesize\ttfamily int Tic\+Tac\+Toe\+Game\+Manager\+::check\+\_\+diagonal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+check\+\_\+diagonal 
+
+\begin{DoxyReturn}{Returns}
+return more than 0 if a player won on the diagonal. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_af5045a121fc7c8f66bf8977ca2efb7b7}\label{class_tic_tac_toe_game_manager_af5045a121fc7c8f66bf8977ca2efb7b7}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!check\+\_\+horizontal@{check\+\_\+horizontal}}
+\index{check\+\_\+horizontal@{check\+\_\+horizontal}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{check\+\_\+horizontal()}{check\_horizontal()}}
+{\footnotesize\ttfamily int Tic\+Tac\+Toe\+Game\+Manager\+::check\+\_\+horizontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+check\+\_\+horizontal 
+
+\begin{DoxyReturn}{Returns}
+return more than 0 if a player won horizontaly. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_aeac0a0f9d52ecf828f0827a2069e36ca}\label{class_tic_tac_toe_game_manager_aeac0a0f9d52ecf828f0827a2069e36ca}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!check\+\_\+player\+\_\+score\+\_\+limit@{check\+\_\+player\+\_\+score\+\_\+limit}}
+\index{check\+\_\+player\+\_\+score\+\_\+limit@{check\+\_\+player\+\_\+score\+\_\+limit}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{check\+\_\+player\+\_\+score\+\_\+limit()}{check\_player\_score\_limit()}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Game\+Manager\+::check\+\_\+player\+\_\+score\+\_\+limit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+check\+\_\+player\+\_\+score\+\_\+limit 
+
+\begin{DoxyReturn}{Returns}
+return true if one of the player reached the score limit. This should end the game. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a25e9e556bf6f7324f4e7ef813778ecd0}\label{class_tic_tac_toe_game_manager_a25e9e556bf6f7324f4e7ef813778ecd0}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!check\+\_\+vertical@{check\+\_\+vertical}}
+\index{check\+\_\+vertical@{check\+\_\+vertical}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{check\+\_\+vertical()}{check\_vertical()}}
+{\footnotesize\ttfamily int Tic\+Tac\+Toe\+Game\+Manager\+::check\+\_\+vertical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+check\+\_\+vertical 
+
+\begin{DoxyReturn}{Returns}
+return more than 0 if a player won verticaly. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a6e619b1a463a7165949d34ce5d4ce1a7}\label{class_tic_tac_toe_game_manager_a6e619b1a463a7165949d34ce5d4ce1a7}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!check\+\_\+winner@{check\+\_\+winner}}
+\index{check\+\_\+winner@{check\+\_\+winner}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{check\+\_\+winner()}{check\_winner()}}
+{\footnotesize\ttfamily int Tic\+Tac\+Toe\+Game\+Manager\+::check\+\_\+winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+check\+\_\+winner 
+
+\begin{DoxyReturn}{Returns}
+Return more than 0 if a player won the current round. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a2d2b1cf7c29f760811f3ecc983dd2c5f}\label{class_tic_tac_toe_game_manager_a2d2b1cf7c29f760811f3ecc983dd2c5f}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!create\+\_\+player@{create\+\_\+player}}
+\index{create\+\_\+player@{create\+\_\+player}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{create\+\_\+player()}{create\_player()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+Manager\+::create\+\_\+player (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const int \&}]{symbol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+create\+\_\+player Create a player based on its name and symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the player \\
+\hline
+{\em symbol} & Symbol (either cross or Circle) of the player. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_game_manager_a197ed85a1deadeb414b3030e11d0bf1e}{I\+Game\+Manager}.
+
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a791389179603563f9c90a25aa173ceb4}\label{class_tic_tac_toe_game_manager_a791389179603563f9c90a25aa173ceb4}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!find\+\_\+player\+\_\+from\+\_\+symbol@{find\+\_\+player\+\_\+from\+\_\+symbol}}
+\index{find\+\_\+player\+\_\+from\+\_\+symbol@{find\+\_\+player\+\_\+from\+\_\+symbol}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{find\+\_\+player\+\_\+from\+\_\+symbol()}{find\_player\_from\_symbol()}}
+{\footnotesize\ttfamily \hyperlink{class_i_player}{I\+Player} $\ast$ Tic\+Tac\+Toe\+Game\+Manager\+::find\+\_\+player\+\_\+from\+\_\+symbol (\begin{DoxyParamCaption}\item[{int}]{symbol,  }\item[{int \&}]{index }\end{DoxyParamCaption})}
+
+
+
+find\+\_\+player\+\_\+from\+\_\+symbol for the given symbol return the player and give its index as a reference parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em symbol} & symbol of the player \\
+\hline
+{\em index} & reference to the index of the player (in parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_aacdb43d784567d95b535e66e91aca832}\label{class_tic_tac_toe_game_manager_aacdb43d784567d95b535e66e91aca832}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!get\+\_\+current\+\_\+player@{get\+\_\+current\+\_\+player}}
+\index{get\+\_\+current\+\_\+player@{get\+\_\+current\+\_\+player}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+current\+\_\+player()}{get\_current\_player()}}
+{\footnotesize\ttfamily class \hyperlink{class_i_player}{I\+Player}$\ast$ Tic\+Tac\+Toe\+Game\+Manager\+::get\+\_\+current\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+\_\+current\+\_\+player 
+
+\begin{DoxyReturn}{Returns}
+Return the currenty player. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a311fdd7f83b66a5cc7eeafe584455315}\label{class_tic_tac_toe_game_manager_a311fdd7f83b66a5cc7eeafe584455315}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!get\+\_\+max\+\_\+score@{get\+\_\+max\+\_\+score}}
+\index{get\+\_\+max\+\_\+score@{get\+\_\+max\+\_\+score}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+max\+\_\+score()}{get\_max\_score()}}
+{\footnotesize\ttfamily int Tic\+Tac\+Toe\+Game\+Manager\+::get\+\_\+max\+\_\+score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+\_\+max\+\_\+score 
+
+\begin{DoxyReturn}{Returns}
+return the max score. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_ac7a54acc425dd27e92f8ff3866a333a6}\label{class_tic_tac_toe_game_manager_ac7a54acc425dd27e92f8ff3866a333a6}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!get\+\_\+players@{get\+\_\+players}}
+\index{get\+\_\+players@{get\+\_\+players}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+players()}{get\_players()}}
+{\footnotesize\ttfamily std\+::vector$<$class \hyperlink{class_i_player}{I\+Player}$\ast$$>$ Tic\+Tac\+Toe\+Game\+Manager\+::get\+\_\+players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+\_\+players 
+
+\begin{DoxyReturn}{Returns}
+return the players of the game. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_af276b6b66af26c170801bdd7aa1fd2f6}\label{class_tic_tac_toe_game_manager_af276b6b66af26c170801bdd7aa1fd2f6}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!play\+\_\+once@{play\+\_\+once}}
+\index{play\+\_\+once@{play\+\_\+once}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{play\+\_\+once()}{play\_once()}}
+{\footnotesize\ttfamily int Tic\+Tac\+Toe\+Game\+Manager\+::play\+\_\+once (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{class Q\+Push\+Button $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+play\+\_\+once Play once and check for different condition to make sure it is a possible move as well as checking if someone won the current round. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Position on the X axis. \\
+\hline
+{\em y} & Position on the Y axis \\
+\hline
+{\em button} & Pointer to the current button in the UI that has been selected so we can update the UI. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return -\/1 if something went wrong other return the symbol of the player. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_af97e0687582ed937fd01c603e82c2b5e}\label{class_tic_tac_toe_game_manager_af97e0687582ed937fd01c603e82c2b5e}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!set\+\_\+current\+\_\+player\+\_\+from\+\_\+index@{set\+\_\+current\+\_\+player\+\_\+from\+\_\+index}}
+\index{set\+\_\+current\+\_\+player\+\_\+from\+\_\+index@{set\+\_\+current\+\_\+player\+\_\+from\+\_\+index}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+current\+\_\+player\+\_\+from\+\_\+index()}{set\_current\_player\_from\_index()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+Manager\+::set\+\_\+current\+\_\+player\+\_\+from\+\_\+index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+set\+\_\+current\+\_\+player\+\_\+from\+\_\+index Set the current player to be for the given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & index of the current player to be set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a309645c05a8ae25efc3d99729af9910b}\label{class_tic_tac_toe_game_manager_a309645c05a8ae25efc3d99729af9910b}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!set\+\_\+max\+\_\+score@{set\+\_\+max\+\_\+score}}
+\index{set\+\_\+max\+\_\+score@{set\+\_\+max\+\_\+score}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+max\+\_\+score()}{set\_max\_score()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+Manager\+::set\+\_\+max\+\_\+score (\begin{DoxyParamCaption}\item[{const int \&}]{max\+\_\+score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set\+\_\+max\+\_\+score Set the maximum score for th game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+score} & Maximum integer to be used. Depending on the widget limit \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tic_tac_toe_game_manager_a4df4150f4292a51a8f711b3cf62e2608}\label{class_tic_tac_toe_game_manager_a4df4150f4292a51a8f711b3cf62e2608}} 
+\index{Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}!update\+\_\+score@{update\+\_\+score}}
+\index{update\+\_\+score@{update\+\_\+score}!Tic\+Tac\+Toe\+Game\+Manager@{Tic\+Tac\+Toe\+Game\+Manager}}
+\subsubsection{\texorpdfstring{update\+\_\+score()}{update\_score()}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Game\+Manager\+::update\+\_\+score (\begin{DoxyParamCaption}\item[{int}]{winner\+Symbol }\end{DoxyParamCaption})}
+
+
+
+update\+\_\+score Update the score on both data (player score) as well as the ui. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner\+Symbol} & Takes the current symbol of the winner (last played symbol). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if it was updated. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Manager/Tic\+Tac\+Toe\+Game\+Manager.\+h\item 
+Manager/Tic\+Tac\+Toe\+Game\+Manager.\+cpp\end{DoxyCompactItemize}

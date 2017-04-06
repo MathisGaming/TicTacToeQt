@@ -1,0 +1,57 @@
+\hypertarget{class_i_game_manager}{}\section{I\+Game\+Manager Class Reference}
+\label{class_i_game_manager}\index{I\+Game\+Manager@{I\+Game\+Manager}}
+
+
+The \hyperlink{class_i_game_manager}{I\+Game\+Manager} class Interface created to implement a Game\+Manager.  
+
+
+
+
+{\ttfamily \#include $<$I\+Game\+Manager.\+h$>$}
+
+Inheritance diagram for I\+Game\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_i_game_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_game_manager_a355e2344fc289700bfa0aab3ba32d1e8}\label{class_i_game_manager_a355e2344fc289700bfa0aab3ba32d1e8}} 
+virtual void \hyperlink{class_i_game_manager_a355e2344fc289700bfa0aab3ba32d1e8}{init} ()=0
+\begin{DoxyCompactList}\small\item\em init Initialize the interface \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_game_manager_a197ed85a1deadeb414b3030e11d0bf1e}{create\+\_\+player} (const std\+::string \&name, const int \&symbol)=0
+\begin{DoxyCompactList}\small\item\em create\+\_\+player Create a player and will store it in a container. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_i_game_manager}{I\+Game\+Manager} class Interface created to implement a Game\+Manager. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_game_manager_a197ed85a1deadeb414b3030e11d0bf1e}\label{class_i_game_manager_a197ed85a1deadeb414b3030e11d0bf1e}} 
+\index{I\+Game\+Manager@{I\+Game\+Manager}!create\+\_\+player@{create\+\_\+player}}
+\index{create\+\_\+player@{create\+\_\+player}!I\+Game\+Manager@{I\+Game\+Manager}}
+\subsubsection{\texorpdfstring{create\+\_\+player()}{create\_player()}}
+{\footnotesize\ttfamily virtual void I\+Game\+Manager\+::create\+\_\+player (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const int \&}]{symbol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+create\+\_\+player Create a player and will store it in a container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the player. \\
+\hline
+{\em symbol} & Symbol / value used by the player to set a case in the board. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_tic_tac_toe_game_manager_a2d2b1cf7c29f760811f3ecc983dd2c5f}{Tic\+Tac\+Toe\+Game\+Manager}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Manager/I\+Game\+Manager.\+h\end{DoxyCompactItemize}

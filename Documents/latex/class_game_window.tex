@@ -1,0 +1,170 @@
+\hypertarget{class_game_window}{}\section{Game\+Window Class Reference}
+\label{class_game_window}\index{Game\+Window@{Game\+Window}}
+
+
+The \hyperlink{class_game_window}{Game\+Window} class The game window class responsible of displaying the game.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Window.\+h$>$}
+
+Inheritance diagram for Game\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_window}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_window_a016b254d770fc4c2ce4a21a4c6f38fbc}{Game\+Window} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_window}{Game\+Window} Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_window_a55b071c0390e45c064a160c1e6baaa08}\label{class_game_window_a55b071c0390e45c064a160c1e6baaa08}} 
+\hyperlink{class_game_window_a55b071c0390e45c064a160c1e6baaa08}{$\sim$\+Game\+Window} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_window_a87e5f249822ac1bd895ad9bcd26a80af}{init\+\_\+ui} (Q\+String fpname, Q\+String spname, Q\+String current\+Player\+Name)
+\begin{DoxyCompactList}\small\item\em init\+\_\+ui Initialize the ui. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_window_a6cb8a429ac545c93457ad00bd0242af3}{update\+\_\+scores\+\_\+ui} (Q\+String fpscore, Q\+String spscore)
+\begin{DoxyCompactList}\small\item\em update\+\_\+scores\+\_\+ui Update the score from the different player \end{DoxyCompactList}\item 
+void \hyperlink{class_game_window_a97c9a250fd9010a1ee4b39fef5325af7}{update\+\_\+current\+\_\+player\+\_\+name\+\_\+ui} (Q\+String name)
+\begin{DoxyCompactList}\small\item\em update\+\_\+current\+\_\+player\+\_\+name\+\_\+ui Update the current player labe. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_window_adfdbef2f1c76091d1a14a07660baeb7f}{show\+\_\+winner} (bool show, Q\+String name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em show\+\_\+winner Will display who is the winner as well as replay button to restart a new game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_window_a4b226699ff95a77a540f4d141f5cae4f}\label{class_game_window_a4b226699ff95a77a540f4d141f5cae4f}} 
+void \hyperlink{class_game_window_a4b226699ff95a77a540f4d141f5cae4f}{reset\+\_\+game\+\_\+buttons} ()
+\begin{DoxyCompactList}\small\item\em reset\+\_\+game\+\_\+buttons Reset the button of the game (style, enable, etc..) \end{DoxyCompactList}\item 
+void \hyperlink{class_game_window_a55e1796bc70513802f85f3830140011b}{enable\+\_\+game\+\_\+buttons} (bool enable)
+\begin{DoxyCompactList}\small\item\em enable\+\_\+game\+\_\+buttons Enable or not the button to be re usable. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_window_adb7764f6b74f57ba2197cb9f5a65c47b}{set\+\_\+button\+\_\+value} (Q\+Push\+Button $\ast$button, int value)
+\begin{DoxyCompactList}\small\item\em set\+\_\+button\+\_\+value Set the current button value (if it is a cross or circle). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_game_window}{Game\+Window} class The game window class responsible of displaying the game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_window_a016b254d770fc4c2ce4a21a4c6f38fbc}\label{class_game_window_a016b254d770fc4c2ce4a21a4c6f38fbc}} 
+\index{Game\+Window@{Game\+Window}!Game\+Window@{Game\+Window}}
+\index{Game\+Window@{Game\+Window}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Game\+Window()}{GameWindow()}}
+{\footnotesize\ttfamily Game\+Window\+::\+Game\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\hyperlink{class_game_window}{Game\+Window} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent widget of the window, default is null. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_window_a55e1796bc70513802f85f3830140011b}\label{class_game_window_a55e1796bc70513802f85f3830140011b}} 
+\index{Game\+Window@{Game\+Window}!enable\+\_\+game\+\_\+buttons@{enable\+\_\+game\+\_\+buttons}}
+\index{enable\+\_\+game\+\_\+buttons@{enable\+\_\+game\+\_\+buttons}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{enable\+\_\+game\+\_\+buttons()}{enable\_game\_buttons()}}
+{\footnotesize\ttfamily void Game\+Window\+::enable\+\_\+game\+\_\+buttons (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})}
+
+
+
+enable\+\_\+game\+\_\+buttons Enable or not the button to be re usable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & True will enable the buttons. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_window_a87e5f249822ac1bd895ad9bcd26a80af}\label{class_game_window_a87e5f249822ac1bd895ad9bcd26a80af}} 
+\index{Game\+Window@{Game\+Window}!init\+\_\+ui@{init\+\_\+ui}}
+\index{init\+\_\+ui@{init\+\_\+ui}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{init\+\_\+ui()}{init\_ui()}}
+{\footnotesize\ttfamily void Game\+Window\+::init\+\_\+ui (\begin{DoxyParamCaption}\item[{Q\+String}]{fpname,  }\item[{Q\+String}]{spname,  }\item[{Q\+String}]{current\+Player\+Name }\end{DoxyParamCaption})}
+
+
+
+init\+\_\+ui Initialize the ui. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fpname} & First Player Name. \\
+\hline
+{\em spname} & Second Player Name. \\
+\hline
+{\em current\+Player\+Name} & Current Player name. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_window_adb7764f6b74f57ba2197cb9f5a65c47b}\label{class_game_window_adb7764f6b74f57ba2197cb9f5a65c47b}} 
+\index{Game\+Window@{Game\+Window}!set\+\_\+button\+\_\+value@{set\+\_\+button\+\_\+value}}
+\index{set\+\_\+button\+\_\+value@{set\+\_\+button\+\_\+value}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{set\+\_\+button\+\_\+value()}{set\_button\_value()}}
+{\footnotesize\ttfamily void Game\+Window\+::set\+\_\+button\+\_\+value (\begin{DoxyParamCaption}\item[{Q\+Push\+Button $\ast$}]{button,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+set\+\_\+button\+\_\+value Set the current button value (if it is a cross or circle). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & Button pointer to be set. \\
+\hline
+{\em value} & New value of the button. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_window_adfdbef2f1c76091d1a14a07660baeb7f}\label{class_game_window_adfdbef2f1c76091d1a14a07660baeb7f}} 
+\index{Game\+Window@{Game\+Window}!show\+\_\+winner@{show\+\_\+winner}}
+\index{show\+\_\+winner@{show\+\_\+winner}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{show\+\_\+winner()}{show\_winner()}}
+{\footnotesize\ttfamily void Game\+Window\+::show\+\_\+winner (\begin{DoxyParamCaption}\item[{bool}]{show,  }\item[{Q\+String}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+show\+\_\+winner Will display who is the winner as well as replay button to restart a new game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em show} & True if we should show the winner. \\
+\hline
+{\em name} & Name of the winner. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_window_a97c9a250fd9010a1ee4b39fef5325af7}\label{class_game_window_a97c9a250fd9010a1ee4b39fef5325af7}} 
+\index{Game\+Window@{Game\+Window}!update\+\_\+current\+\_\+player\+\_\+name\+\_\+ui@{update\+\_\+current\+\_\+player\+\_\+name\+\_\+ui}}
+\index{update\+\_\+current\+\_\+player\+\_\+name\+\_\+ui@{update\+\_\+current\+\_\+player\+\_\+name\+\_\+ui}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{update\+\_\+current\+\_\+player\+\_\+name\+\_\+ui()}{update\_current\_player\_name\_ui()}}
+{\footnotesize\ttfamily void Game\+Window\+::update\+\_\+current\+\_\+player\+\_\+name\+\_\+ui (\begin{DoxyParamCaption}\item[{Q\+String}]{name }\end{DoxyParamCaption})}
+
+
+
+update\+\_\+current\+\_\+player\+\_\+name\+\_\+ui Update the current player labe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the current player. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_window_a6cb8a429ac545c93457ad00bd0242af3}\label{class_game_window_a6cb8a429ac545c93457ad00bd0242af3}} 
+\index{Game\+Window@{Game\+Window}!update\+\_\+scores\+\_\+ui@{update\+\_\+scores\+\_\+ui}}
+\index{update\+\_\+scores\+\_\+ui@{update\+\_\+scores\+\_\+ui}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{update\+\_\+scores\+\_\+ui()}{update\_scores\_ui()}}
+{\footnotesize\ttfamily void Game\+Window\+::update\+\_\+scores\+\_\+ui (\begin{DoxyParamCaption}\item[{Q\+String}]{fpscore,  }\item[{Q\+String}]{spscore }\end{DoxyParamCaption})}
+
+
+
+update\+\_\+scores\+\_\+ui Update the score from the different player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fpscore} & First player score. \\
+\hline
+{\em spscore} & Second player score. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Window.\+h\item 
+Game\+Window.\+cpp\end{DoxyCompactItemize}

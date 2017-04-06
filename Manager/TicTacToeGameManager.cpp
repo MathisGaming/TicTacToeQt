@@ -48,14 +48,6 @@ void TicTacToeGameManager::create_player(const std::string& name, const int& sym
     m_players.push_back(new TicTacToePlayer(name,symbol));
 }
 
-void TicTacToeGameManager::create_players(const std::vector<std::string>& names)
-{
-    for(int i = 0; i < names.size(); ++i)
-    {
-        m_players.push_back(new TicTacToePlayer(names[i],i));
-    }
-}
-
 int TicTacToeGameManager::play_once(int x, int y,QPushButton* button)
 {
     // TODO : refactor this method.

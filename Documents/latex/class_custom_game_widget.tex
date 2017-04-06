@@ -1,0 +1,94 @@
+\hypertarget{class_custom_game_widget}{}\section{Custom\+Game\+Widget Class Reference}
+\label{class_custom_game_widget}\index{Custom\+Game\+Widget@{Custom\+Game\+Widget}}
+
+
+The \hyperlink{class_custom_game_widget}{Custom\+Game\+Widget} class Widget used to handle the game board.  
+
+
+
+
+{\ttfamily \#include $<$customgamewidget.\+h$>$}
+
+Inheritance diagram for Custom\+Game\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_custom_game_widget}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_custom_game_widget_a1c85b1e714a238a7afbcbb8dfa28f0b1}{Custom\+Game\+Widget} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_custom_game_widget}{Custom\+Game\+Widget} Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_custom_game_widget_a43b0436fa948b2b44009fe2e656ac3e0}\label{class_custom_game_widget_a43b0436fa948b2b44009fe2e656ac3e0}} 
+\hyperlink{class_custom_game_widget_a43b0436fa948b2b44009fe2e656ac3e0}{$\sim$\+Custom\+Game\+Widget} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_custom_game_widget_aa9e4d0f12c9070a0e432631754f8913a}\label{class_custom_game_widget_aa9e4d0f12c9070a0e432631754f8913a}} 
+void \hyperlink{class_custom_game_widget_aa9e4d0f12c9070a0e432631754f8913a}{reset\+\_\+buttons} ()
+\begin{DoxyCompactList}\small\item\em reset\+\_\+buttons Reset the buttons of the board (style,enable etc..). \end{DoxyCompactList}\item 
+void \hyperlink{class_custom_game_widget_abd589dcb5502f401773de7f1d349954a}{enable\+\_\+buttons} (bool enable)
+\begin{DoxyCompactList}\small\item\em enable\+\_\+buttons Enable the buttons or not (play buttons). \end{DoxyCompactList}\item 
+void \hyperlink{class_custom_game_widget_ae34e750a94a537ee435aa31311b5f495}{set\+\_\+button\+\_\+value} (class Q\+Push\+Button $\ast$button, int value)
+\begin{DoxyCompactList}\small\item\em set\+\_\+button\+\_\+value Set the button value, Either cross or circle depending on who played. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_custom_game_widget}{Custom\+Game\+Widget} class Widget used to handle the game board. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_custom_game_widget_a1c85b1e714a238a7afbcbb8dfa28f0b1}\label{class_custom_game_widget_a1c85b1e714a238a7afbcbb8dfa28f0b1}} 
+\index{Custom\+Game\+Widget@{Custom\+Game\+Widget}!Custom\+Game\+Widget@{Custom\+Game\+Widget}}
+\index{Custom\+Game\+Widget@{Custom\+Game\+Widget}!Custom\+Game\+Widget@{Custom\+Game\+Widget}}
+\subsubsection{\texorpdfstring{Custom\+Game\+Widget()}{CustomGameWidget()}}
+{\footnotesize\ttfamily Custom\+Game\+Widget\+::\+Custom\+Game\+Widget (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\hyperlink{class_custom_game_widget}{Custom\+Game\+Widget} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent widget, default is null. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_custom_game_widget_abd589dcb5502f401773de7f1d349954a}\label{class_custom_game_widget_abd589dcb5502f401773de7f1d349954a}} 
+\index{Custom\+Game\+Widget@{Custom\+Game\+Widget}!enable\+\_\+buttons@{enable\+\_\+buttons}}
+\index{enable\+\_\+buttons@{enable\+\_\+buttons}!Custom\+Game\+Widget@{Custom\+Game\+Widget}}
+\subsubsection{\texorpdfstring{enable\+\_\+buttons()}{enable\_buttons()}}
+{\footnotesize\ttfamily void Custom\+Game\+Widget\+::enable\+\_\+buttons (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})}
+
+
+
+enable\+\_\+buttons Enable the buttons or not (play buttons). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & If true, will enable the buttons. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_custom_game_widget_ae34e750a94a537ee435aa31311b5f495}\label{class_custom_game_widget_ae34e750a94a537ee435aa31311b5f495}} 
+\index{Custom\+Game\+Widget@{Custom\+Game\+Widget}!set\+\_\+button\+\_\+value@{set\+\_\+button\+\_\+value}}
+\index{set\+\_\+button\+\_\+value@{set\+\_\+button\+\_\+value}!Custom\+Game\+Widget@{Custom\+Game\+Widget}}
+\subsubsection{\texorpdfstring{set\+\_\+button\+\_\+value()}{set\_button\_value()}}
+{\footnotesize\ttfamily void Custom\+Game\+Widget\+::set\+\_\+button\+\_\+value (\begin{DoxyParamCaption}\item[{class Q\+Push\+Button $\ast$}]{button,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+set\+\_\+button\+\_\+value Set the button value, Either cross or circle depending on who played. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & Pointer to the button to be edited \\
+\hline
+{\em value} & Value of the symbol of the player that pressed the button. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Widget/customgamewidget.\+h\item 
+Widget/customgamewidget.\+cpp\end{DoxyCompactItemize}

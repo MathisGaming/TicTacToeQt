@@ -1,3 +1,6 @@
+/**
+ * @brief The IScore class Interface used to template what a score will be.
+ */
 class IScore
 {
 public:
